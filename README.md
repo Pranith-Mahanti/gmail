@@ -1,2 +1,2 @@
-# quotes
-Gives random quotes
+# gmail
+Send messages from gmail easily
