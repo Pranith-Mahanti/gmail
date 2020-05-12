@@ -14,16 +14,18 @@ def send_mail():
         smtp.ehlo()
 
         smtp.login(creds[0], creds[1])
-
-        to = sys.argv[1]
+        try:
+            to = sys.argv[1]
+        except:
+            to = input("To: ")
         try:
             subject = sys.argv[2]
         except:
-            subject = input("Enter the subject: ")
+            subject = input("Subject: ")
         try:
             body = sys.argv[3]
         except:
-            body = input("Enter the message: ")
+            body = input("Message: ")
 
         msg = f"Subject: {subject}\n\n{body}"
 
