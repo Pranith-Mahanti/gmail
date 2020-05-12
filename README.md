@@ -1,0 +1,2 @@
+# quotes
+Gives random quotes
